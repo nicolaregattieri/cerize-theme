@@ -1,16 +1,18 @@
 {
-  "vendor": "vtex",
-  "name": "cerize",
+  "vendor": "beautytheme",
+  "name": "store",
   "version": "0.1.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "assets": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
+    "vtex.store-image": "0.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",

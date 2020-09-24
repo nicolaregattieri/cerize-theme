@@ -1,15 +1,41 @@
 {
-  "store.home": { 
-    "blocks": [
-      "rich-text"
-    ]
+  "store.home": {
+    "blocks": ["flex-layout.row#home-slider"]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#home-slider": {
+    "title": "Carrossel da home",
+    "children": ["list-context.image-list#home-image-list"]
+  },
+  "list-context.image-list#home-image-list": {
+    "children": ["slider-layout#home-carousel"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://images.pexels.com/photos/3373740/pexels-photo-3373740.jpeg",
+          "mobileImage": "assets/cerize-banner-m1.png",
+          "description": "Qualidade em cuidar de você"
+        },
+        {
+          "image": "assets/cerize-banner-m1.png",
+          "mobileImage": "assets/cerize-banner-m1.png",
+          "description": "Qualidade em cuidar de você"
+        }
+      ]
+    }
+  },
+  "slider-layout#home-carousel": {
+    "title": "Clique para alterar",
+    "props": {
+      "fullWidth": true,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
     }
   }
 }

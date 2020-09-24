@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -42,14 +40,15 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["rich-text#logo"]
   },
-  "logo": {
+  "rich-text#logo": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "text": "[Cerize](/)",
+      "blockClass": "logo-cerize",
+      "font": {
+        "mobile": "t-heading-6"
+      }
     }
   },
   "header-layout.mobile": {
@@ -61,7 +60,9 @@
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
+      "rich-text#logo",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -75,5 +76,10 @@
   },
   "drawer": {
     "children": []
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true
+    }
   }
 }
