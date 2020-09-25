@@ -1,6 +1,8 @@
 .paragraph--logo-cerize {
-  margin: 0 !important;
+  margin: 0;
+  font-weight: 300;
 }
 .link--logo-cerize {
-  text-decoration: none !important;
+  text-decoration: none;
+  color: #33272a;
 }
