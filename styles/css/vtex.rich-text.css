@@ -5,4 +5,11 @@
 .link--logo-cerize {
   text-decoration: none;
   color: #33272a;
+  font-weight: 400;
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+.container--logo-cerize {
+  align-items: center;
 }

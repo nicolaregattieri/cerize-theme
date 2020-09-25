@@ -2,3 +2,14 @@
   padding: 0;
   margin: 0;
 }
+.flexRowContent--main-header-mobile {
+  background-color: #faeee7;
+}
+.flexRow--home-carousel {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+.wrapper--sticky-header .container {
+  max-width: 1550px;
+  margin: 0 auto;
+}

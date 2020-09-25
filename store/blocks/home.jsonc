@@ -4,6 +4,7 @@
       "flex-layout.row#home-slider",
       "rich-text#main-title",
       "flex-layout.row#shelf",
+      "__fold__",
       "flex-layout.row#discover"
     ]
   },

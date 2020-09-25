@@ -62,8 +62,6 @@
       "drawer",
       "rich-text#logo",
       "flex-layout.col#spacer",
-      "flex-layout.col#spacer",
-      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ],
@@ -75,7 +73,17 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-makeup",
+      "menu-item#category-hair",
+      "menu-item#category-perfume"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
   },
   "login": {
     "props": {
