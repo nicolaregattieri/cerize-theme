@@ -82,8 +82,8 @@
 
   "flex-layout.row#discover": {
     "props": {
-      "paddingBottom": 10,
-      "paddingTop": 10
+      "paddingBottom": { "mobile": 6, "desktop": 10 },
+      "paddingTop": { "mobile": 6, "desktop": 10 }
     },
     "children": ["info-card#home"]
   },
