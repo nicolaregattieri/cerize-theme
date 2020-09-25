@@ -1,9 +1,20 @@
 {
   "store.home": {
-    "blocks": ["flex-layout.row#home-slider"]
+    "blocks": [
+      "flex-layout.row#home-slider",
+      "rich-text#main-title",
+      "flex-layout.row#shelf",
+      "__fold__",
+      "flex-layout.row#discover"
+    ]
   },
   "flex-layout.row#home-slider": {
     "title": "Carrossel da home",
+    "props": {
+      "blockClass": "home-carousel",
+      "fullWidth": true,
+      "paddingBottom": 4
+    },
     "children": ["list-context.image-list#home-image-list"]
   },
   "list-context.image-list#home-image-list": {
@@ -17,7 +28,7 @@
           "description": "Qualidade em cuidar de você"
         },
         {
-          "image": "assets/cerize-banner-m1.png",
+          "image": "assets/pexels-bestbe-models.jpg",
           "mobileImage": "assets/cerize-banner-m1.png",
           "description": "Qualidade em cuidar de você"
         }
@@ -25,7 +36,6 @@
     }
   },
   "slider-layout#home-carousel": {
-    "title": "Clique para alterar",
     "props": {
       "fullWidth": true,
       "itemsPerPage": {
@@ -35,7 +45,61 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
       "blockClass": "carousel"
+    }
+  },
+  "rich-text#main-title": {
+    "props": {
+      "text": "Qual o seu look de hoje?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": {
+        "desktop": "t-heading-2",
+        "mobile": "t-heading-4"
+      }
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list"]
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf#main-shelf"],
+    "children": ["slider-layout#shelf-slider"]
+  },
+  "slider-layout#shelf-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "shelf-carousel"
+    }
+  },
+
+  "flex-layout.row#discover": {
+    "props": {
+      "paddingBottom": { "mobile": 6, "desktop": 10 },
+      "paddingTop": { "mobile": 6, "desktop": 10 }
+    },
+    "children": ["info-card#home"]
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/pexels-kinkate-208052.jpg",
+      "headline": "As melhores marcas estão aqui.",
+      "subhead": "O nosso estilo é o seu estilo ;)",
+      "callToActionText": "DESCUBRA",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
     }
   }
 }

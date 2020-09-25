@@ -2,25 +2,23 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer"]
   },
-  "footer-layout.mobile": { 
-    "children": [
-      "flex-layout.row#footer"
-    ]
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer"]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
+  "flex-layout.row#footer": {
+    "children": ["rich-text#copyright"]
   },
-  "image": {
+  "rich-text#copyright": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "text": "Grupo3 2020",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": {
+        "mobile": "t-small"
+      }
     }
   }
 }

@@ -22,15 +22,19 @@
     }
   },
 
-  "product-summary.shelf": {
+  "product-summary.shelf#main-shelf": {
     "children": [
       "product-summary-add-to-list-button",
+      "product-summary-image",
       "product-summary-name",
-      "product-rating-inline",
       "product-summary-space",
       "product-summary-price",
-      "product-identifier.summary",
       "add-to-cart-button"
     ]
+  },
+  "add-to-cart-button": {
+    "props": {
+      "text": "Comprar"
+    }
   }
 }

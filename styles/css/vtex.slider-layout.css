@@ -1,0 +1,10 @@
+.paginationDotsContainer--carousel {
+  bottom: -1.7rem;
+}
+.slide--shelf-carousel,
+:global(.vtex-shelf-1-x-slide) {
+  padding: 10px;
+}
+.paginationDotsContainer--shelf-carousel {
+  bottom: -10px;
+}

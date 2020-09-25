@@ -1,6 +1,15 @@
 .paragraph--logo-cerize {
-  margin: 0 !important;
+  margin: 0;
+  font-weight: 300;
 }
 .link--logo-cerize {
-  text-decoration: none !important;
+  text-decoration: none;
+  color: #33272a;
+  font-weight: 400;
+  position: relative;
+  top: -3px;
+  margin-left: 5px;
+}
+.container--logo-cerize {
+  align-items: center;
 }
